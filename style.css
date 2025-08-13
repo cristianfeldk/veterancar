@@ -152,7 +152,7 @@ section.especialidades .flex {
     box-sizing: border-box;
     color: #fff;
     border-radius: 20px;
-    padding: 30px; /* espaçamento interno */
+    padding: 30px;
 }
 
 
@@ -221,14 +221,14 @@ section.sobre .flex {
     border-radius: 50px;
 }
 
-/* PORTFOLIO */
+/* sobre */
 
-section.portfolio {
+section.sobre {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff0a;
 } 
  
-section.portfolio .flex {
+section.sobre .flex {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -236,8 +236,8 @@ section.portfolio .flex {
 }
 
 .img-port {
-    width: 100%; /* ocupa todo o espaço disponível */
-    aspect-ratio: 3 / 4; /* mantém proporção aproximada 360x460 */
+    width: 100%; 
+    aspect-ratio: 3 / 4;
     background-size: cover;
     background-position: center;
     border-radius: 40px;
@@ -280,42 +280,67 @@ section.portfolio .flex {
 /* RODAPÉ */
 
 footer {
-    padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #ffffff0a;
+    padding: 40px 4%;
+    background-color: black;
+    color: #fff;
+}
+
+footer .borda {
+    border-top: 2px solid orange;
+    padding-top: 20px;
 }
 
 footer .flex {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-footer .line-footer {
-    padding: 20px 0;
-}
-
-.borda {
-    border-top: 2px solid orange;
-}
-
-footer .line-footer p i {
-    color: orange;
-    font-size: 25px;
-}
-
-footer .line-footer p a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer img {
+.logo-footer img {
     width: 100px;
 }
+
+.localizacao-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.localizacao-footer i {
+    color: orange;
+    font-size: 20px;
+}
+
+.localizacao-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.localizacao-footer a:hover {
+    color: orange;
+}
+
+footer .btn-social {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 
 /* Para tablets */
 @media (max-width: 1024px) {
     section.topo-site .flex,
     section.especialidades .flex,
     section.sobre .flex,
-    section.portfolio .flex {
+    section.sobre .flex {
         flex-direction: column;
         text-align: center;
     }
@@ -338,7 +363,7 @@ footer img {
     }
 
     nav.menu-desktop {
-        display: none; /* Aqui futuramente pode entrar um menu hambúrguer */
+        display: none;
     }
 
     h2.titulo {
