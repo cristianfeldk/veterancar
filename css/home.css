@@ -1,4 +1,3 @@
-/* TOPO */
 section.topo-site { padding: 40px 4%; }
 section.topo-site .flex { align-items: center; justify-content: center; gap: 90px; }
 
@@ -11,7 +10,6 @@ section.topo-site .flex { align-items: center; justify-content: center; gap: 90p
 
 @keyframes flutuar { 0%{ top:0; } 100%{ top:20px; } }
 
-/* ESPECIALIDADES */
 section.especialidades {
   padding: 40px 4%;
   box-shadow: 0 0 40px 10px #ffffff0a;
@@ -20,7 +18,7 @@ section.especialidades .flex {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  margin-top: 40px; /* espaço do título p/ os cards */
+  margin-top: 40px;
 }
 .especialidades .especialidades-box {
   flex: 1 1 calc(33.333% - 50px);
@@ -38,7 +36,6 @@ section.especialidades .flex {
 .especialidades .especialidades-box i { font-size: 68px; color: orange; }
 .especialidades .especialidades-box h3 { font-size: 25px; margin: 15px 0; }
 
-/* SOBRE (texto + galeria/tiles) */
 section.sobre {
   padding: 80px 4%;
   box-shadow: 0 0 40px 10px #ffffff0a;
@@ -49,7 +46,6 @@ section.sobre {
 .sobre .txt-sobre p { margin: 20px 0; text-align: justify; }
 .img-sobre img { width: 300px; border-radius: 50px; }
 
-/* grade de mídia dentro do .sobre */
 section.sobre .flex {
   display: grid;                                /* usamos a versão em grade (a mais recente) */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -57,7 +53,6 @@ section.sobre .flex {
   margin-top: 40px;
 }
 
-/* blocos de imagem/vídeo */
 .img-port {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -74,7 +69,6 @@ section.sobre .flex {
 }
 .img-port:hover { background-position: 100% 100%; }
 
-/* overlay */
 .overlay {
   position: absolute;
   inset: 0;

@@ -12,10 +12,10 @@ body {
 /* Botões genéricos */
 .btn-contato button {
   padding: 10px 40px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   border: 0;
-  border-radius: 30px;
+  border-radius: 15px;
   cursor: pointer;
   background-color: orange;
   transition: .2s;
