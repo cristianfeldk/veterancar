@@ -1,0 +1,28 @@
+/* Rodapé */
+footer {
+  padding: 40px 4%;
+  background-color: #000;
+  color: #fff;
+}
+
+footer .borda { border-top: 2px solid orange; padding-top: 20px; }
+
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-footer img { width: 100px; }
+
+.localizacao-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+.localizacao-footer i { color: orange; font-size: 20px; }
+.localizacao-footer a { color: #fff; text-decoration: none; transition: color .2s; }
+.localizacao-footer a:hover { color: orange; }
+
+footer .btn-social { display: flex; gap: 8px; }

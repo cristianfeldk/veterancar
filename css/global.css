@@ -1,0 +1,43 @@
+/* Globais / tema */
+body {
+  background-color: #000;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.interface { max-width: 1280px; margin: 0 auto; }
+.flex { display: flex; }
+
+/* Botões genéricos */
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: orange;
+  transition: .2s;
+}
+button:hover {
+  box-shadow: 0 0 8px rgba(0,191,255,.435);
+  transform: scale(1.05);
+}
+
+/* Títulos */
+h2.titulo { color: #fff; font-size: 38px; text-align: center; }
+h2.titulo span { color: orange; }
+
+/* Ícones sociais redondos (usados no footer e onde mais precisar) */
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: orange;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: .2s;
+}

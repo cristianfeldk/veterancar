@@ -1,0 +1,92 @@
+/* TOPO */
+section.topo-site { padding: 40px 4%; }
+section.topo-site .flex { align-items: center; justify-content: center; gap: 90px; }
+
+.topo-site h1 { color: #fff; font-size: 32px; line-height: 40px; }
+.topo-site .txt-topo-site h1 span { color: orange; }
+.topo-site .txt-topo-site p { color: #fff; margin: 40px 0; text-align: left; }
+
+.topo-site .img-topo-site { position: relative; animation: flutuar 1.5s ease-in-out infinite alternate; }
+.img-topo-site img { width: 300px; border-radius: 50px; }
+
+@keyframes flutuar { 0%{ top:0; } 100%{ top:20px; } }
+
+/* ESPECIALIDADES */
+section.especialidades {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff0a;
+}
+section.especialidades .flex {
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px; /* espaço do título p/ os cards */
+}
+.especialidades .especialidades-box {
+  flex: 1 1 calc(33.333% - 50px);
+  max-width: calc(33.333% - 50px);
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff71;
+  border-radius: 20px;
+}
+.especialidades .especialidades-box i { font-size: 68px; color: orange; }
+.especialidades .especialidades-box h3 { font-size: 25px; margin: 15px 0; }
+
+/* SOBRE (texto + galeria/tiles) */
+section.sobre {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff0a;
+}
+.sobre .txt-sobre { color:#fff; }
+.sobre .txt-sobre h2 { font-size: 30px; line-height: 40px; margin-bottom: 30px; }
+.sobre .txt-sobre h2 span { color: orange; display: block; }
+.sobre .txt-sobre p { margin: 20px 0; text-align: justify; }
+.img-sobre img { width: 300px; border-radius: 50px; }
+
+/* grade de mídia dentro do .sobre */
+section.sobre .flex {
+  display: grid;                                /* usamos a versão em grade (a mais recente) */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* blocos de imagem/vídeo */
+.img-port {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  position: relative;
+}
+.img-port video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.img-port:hover { background-position: 100% 100%; }
+
+/* overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: rgba(0,0,0,.328);
+  color: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+.overlay:hover { opacity: 1; }
