@@ -20,6 +20,7 @@ section.especialidades .flex {
   justify-content: center;
   margin-top: 40px;
 }
+
 .especialidades .especialidades-box {
   flex: 1 1 calc(33.333% - 50px);
   max-width: calc(33.333% - 50px);
@@ -111,10 +112,12 @@ section.sobre .flex {
     padding: 30px 4%;
   }
   .especialidades .especialidades-box {
-    flex: 1 1 100%;
-    max-width: 100%;
-    padding: 20px;
-    text-align: center;
+    flex: 1 1 calc(33.333% - 50px);
+    max-width: calc(33.333% - 50px);
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px;
   }
   .especialidades .especialidades-box h3 {
     font-size: 20px;
