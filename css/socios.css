@@ -47,6 +47,19 @@ section.socios, .socios {
     color: white;
 }
 
+.socios .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.socios .socio-card, 
+.socios .card-socio {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
 @media (max-width: 1024px) {
     .socios .socio-card, .socios .card-socio {
         flex: 1 1 calc(33.333% - 20px);
@@ -67,3 +80,4 @@ section.socios, .socios {
         max-width: 100%;
     }
 }
+
